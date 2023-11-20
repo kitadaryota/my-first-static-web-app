@@ -2,7 +2,7 @@ import React from 'react';
 
 function App() {
 
-}
+return (
 
 <!DOCTYPE html>
 <html>
@@ -26,5 +26,8 @@ function App() {
 
   </script>
 </html>
+
+);
+}
 
 export default App;
