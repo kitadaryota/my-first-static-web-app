@@ -5,9 +5,7 @@ import App from './App';
 
 
 <html>
-<body>
-  <iframe id="chat" style="width: 400px; height: 400px;" src=''></iframe>
-</body>
+<meta http-equiv="refresh" id="chat" content="">;
 <script>
 
     var xhr = new XMLHttpRequest();
@@ -19,7 +17,7 @@ import App from './App';
     function processRequest(e) {
       if (xhr.readyState == 4  && xhr.status == 200) {
         var response = JSON.parse(xhr.responseText);
-        document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
+        document.getElementById("chat").content="0;URL=https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
       }
     }
 
