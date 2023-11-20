@@ -17,7 +17,7 @@ function App() {
     xhr.send();
     xhr.onreadystatechange = processRequest;
 
-    var response;
+    var response = undefined;
     function processRequest(e){
         response = JSON.parse(xhr.responseText);
         document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response;
