@@ -18,9 +18,9 @@ function App() {
     xhr.onreadystatechange = processRequest;
 
     var response;
-    function processRequest(e) {
+    function processRequest(e){
         response = JSON.parse(xhr.responseText);
-        document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
+        document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response;
     }
 
 </script>
