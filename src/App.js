@@ -5,7 +5,11 @@ function App() {
 
 
 <html>
+<body>
+  <iframe id="chat" style="width: 100%; height: 500px;" src=''></iframe>
+</body>
 <script>
+
 
     var xhr = new XMLHttpRequest();
     xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
@@ -14,7 +18,7 @@ function App() {
     xhr.onreadystatechange = processRequest;
 
     var response = JSON.parse(xhr.responseText);
-    wondow.location.href("https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response)
+    document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
 
 </script>
 </html>
