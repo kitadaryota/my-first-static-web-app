@@ -2,9 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-
-<html>
-<meta http-equiv="refresh" id="chat" content="" />;
+<meta http-equiv="refresh" id="chat" content="" />
 <script>
 
     var xhr = new XMLHttpRequest();
@@ -17,5 +15,4 @@ import './index.css';
     document.getElementById("chat").content="0;URL=https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
 
 </script>
-</html>
 
