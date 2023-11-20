@@ -6,7 +6,7 @@ function App() {
 
 <html>
 <body>
-  <iframe id="chat" style={{min-width: "400px"; width: "70%"; min-height: "500px"}} title="chatbot" src=""></iframe>
+  <iframe id="chat" style={{min-width: "400px", width: "70%", min-height: "500px"}} title="chatbot" src=""></iframe>
 </body>
 <script>
 
