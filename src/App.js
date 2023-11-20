@@ -6,7 +6,7 @@ function App() {
 
 <html>
 <body>
-  <iframe id="chat" width="500" height="400" title="chatbot" src=""></iframe>
+  <iframe id="chat" style='min-width: 400px; width: 70%; min-height: 500px;' title="chatbot" src=""></iframe>
 </body>
 <script>
 
@@ -17,8 +17,12 @@ function App() {
     xhr.send();
     xhr.onreadystatechange = processRequest;
 
-    var response = JSON.parse(xhr.responseText);
-    document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
+    function processRequest(e){
+      if (xhr.readyState == 4  && xhr.status == 200) {
+        var response = JSON.parse(xhr.responseText);
+        document.getElementById("chat").src="https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
+      }
+    }
 
 </script>
 </html>
