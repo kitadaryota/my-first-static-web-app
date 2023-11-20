@@ -6,7 +6,7 @@ function App() {
 
 <html>
 <body>
-  <iframe id="chat" style="width: 100%; height: 500px;" src=''></iframe>
+  <iframe id="chat" width="100%" height="500" title="chatbot" src="></iframe>
 </body>
 <script>
 
