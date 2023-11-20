@@ -4,7 +4,6 @@ function App() {
 
 return (
 
-<!DOCTYPE html>
 <html>
 <body>
   <iframe id="chat" style="width: 400px; height: 400px;" src=''></iframe>
