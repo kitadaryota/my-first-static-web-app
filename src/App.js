@@ -6,14 +6,14 @@ function App() {
 
 <html>
 <body>
-  <iframe id="chat" width="100%" height="500" title="chatbot" src="></iframe>
+  <iframe id="chat" width="100%" height="500" title="chatbot" src=""></iframe>
 </body>
 <script>
 
 
     var xhr = new XMLHttpRequest();
-    xhr.open('GET', "https://webchat.botframework.com/api/tokens", true);
-    xhr.setRequestHeader('Authorization', 'BotConnector ' + '9btLS8G3L9w.poDHGSZtpzG9d1aYEtc5wZvXXAGnLhjRqB-L4sYhcgc');
+    xhr.open("GET", "https://webchat.botframework.com/api/tokens", true);
+    xhr.setRequestHeader("Authorization", "BotConnector " + '9btLS8G3L9w.poDHGSZtpzG9d1aYEtc5wZvXXAGnLhjRqB-L4sYhcgc');
     xhr.send();
     xhr.onreadystatechange = processRequest;
 
