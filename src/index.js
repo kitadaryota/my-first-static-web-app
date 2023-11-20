@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 
-<meta http-equiv="refresh" id="chat" content="" />
+<meta http-equiv="refresh" id="chat" content=""></meta>
 <script>
 
     var xhr = new XMLHttpRequest();
