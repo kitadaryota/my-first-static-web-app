@@ -5,7 +5,6 @@ function App() {
 
 
 <html>
-  <meta http-equiv="refresh" id="chat" content=""></meta>
 <script>
 
     var xhr = new XMLHttpRequest();
@@ -15,7 +14,7 @@ function App() {
     xhr.onreadystatechange = processRequest;
 
     var response = JSON.parse(xhr.responseText);
-    document.getElementById("chat").content="0;URL=https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response
+    wondow.location.href("https://webchat.botframework.com/embed/gr5-Inquiry-ls-bot?t="+response)
 
 </script>
 </html>
